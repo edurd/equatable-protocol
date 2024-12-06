@@ -62,3 +62,21 @@ let animal3 = AnimalA(name: "Dog", numberOfLegs: 4)
 let animal4 = AnimalA(name: "Dog", numberOfLegs: 4)
 
 print(animal3 == animal4) // Value Equality
+
+
+class AnimalB {
+
+    var name: String
+    var numberOfLegs: Int
+
+    init(name: String, numberOfLegs: Int) {
+        self.name = name
+        self.numberOfLegs = numberOfLegs
+    }
+
+}
+
+let animal5 = AnimalB(name: "Dog", numberOfLegs: 4)
+let animal6 = AnimalB(name: "Dog", numberOfLegs: 4)
+
+//print(animal5 == animal6) // Error: Binary operator '==' cannot be applied to two 'AnimalB' operands
